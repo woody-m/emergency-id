@@ -4,8 +4,10 @@
     font-family: system-ui, -apple-system, sans-serif;
 }
 
+
 body {
     min-height: 100vh;
+    font-size: clamp(15px, 2.5vw, 18px);
 
     /* imagem de fundo */
     background-image: url("../assets/img/autism-bg.png");
@@ -18,12 +20,19 @@ body {
 }
 
 .container {
-    max-width: 500px;
-    margin: auto;
+    width: 100%;
+    max-width: 480px;
+    /* largura ideal mobile */
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    padding: 0 12px;
+    /* respiro lateral */
 }
+
 
 .card {
     background: rgba(255, 255, 255, 0.96);
@@ -115,4 +124,19 @@ body {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
 
     opacity: 0.85;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        padding: 40px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    .btn {
+        font-size: 17px;
+    }
 }
