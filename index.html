@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Identificação de Emergência</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#4F8CFF" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- 🚨 EMERGÊNCIA -->
+        <section class="card emergency">
+            <h1>🚨 Precisa de ajuda agora?</h1>
+
+            <a class="btn call" href="tel:+5511999999999">📞 Ligar para a mãe</a>
+            <a class="btn call secondary" href="tel:+5511888888888">📞 Ligar para o pai</a>
+            <button class="btn location" id="sendLocation">📍 Enviar localização</button>
+            <button class="btn voice" id="speakBtn">🔊 Ler em voz alta</button>
+        </section>
+
+        <!-- 👤 IDENTIFICAÇÃO -->
+        <section class="card profile">
+            <img src="assets/img/child.jpg" alt="Foto da criança" class="photo" />
+
+            <div>
+                <h2>Lucas Oliveira Santos</h2>
+                <p class="highlight">Sou autista</p>
+                <p>Posso ter dificuldade de comunicação. Fale com calma.</p>
+            </div>
+        </section>
+
+        <!-- ❤️ COMO AJUDAR -->
+        <section class="card help">
+            <h3>Como ajudar</h3>
+            <ul>
+                <li>Falar devagar</li>
+                <li>Evitar barulho</li>
+                <li>Evitar toque físico</li>
+                <li>Levar para lugar calmo</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/tts.js"></script>
+
+</body>
+
+</html>
