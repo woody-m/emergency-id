@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background: url("../assets/img/autism-bg.png") center/cover no-repeat fixed;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+    width: 120px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.call {
+    background: #ffe7a8;
+}
+
+.secondary {
+    background: #dbe9ff;
+}
+
+.location {
+    background: #ffd6d6;
+}
+
+.voice {
+    background: #e7f9ef;
+}
+
+.highlight {
+    color: #4F8CFF;
+    font-weight: bold;
+}
