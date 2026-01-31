@@ -1,11 +1,11 @@
 # macOS
 .DS_Store
 
-# node (caso evolua no futuro)
-node_modules
+# env
+.env
 
 # logs
 *.log
 
-# env
-.env
+# dependencies
+node_modules
