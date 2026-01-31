@@ -1,4 +1,4 @@
-const CACHE = "emergency-v2"; // já aproveita pra mudar versão
+const CACHE = "emergency-v2";
 
 const ASSETS = [
     "./",
