@@ -1,13 +1,13 @@
-const CACHE = "emergency-v1";
+const CACHE = "emergency-v2"; // já aproveita pra mudar versão
 
 const ASSETS = [
-    "/",
-    "/index.html",
-    "/css/styles.css",
-    "/js/app.js",
-    "/js/tts.js",
-    "/assets/img/autism-bg.png",
-    "/assets/img/child.jpg"
+    "./",
+    "./index.html",
+    "./css/styles.css",
+    "./js/app.js",
+    "./js/tts.js",
+    "./assets/img/autism-bg.png",
+    "./assets/img/child.jpg"
 ];
 
 self.addEventListener("install", e => {
