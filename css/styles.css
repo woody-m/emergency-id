@@ -5,7 +5,15 @@
 }
 
 body {
-    background: url("../assets/img/autism-bg.png") center/cover no-repeat fixed;
+    min-height: 100vh;
+
+    /* imagem de fundo */
+    background-image: url("../assets/img/autism-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
     padding: 20px;
 }
 
@@ -18,7 +26,10 @@ body {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.96);
+    /* levemente translúcido */
+    backdrop-filter: blur(3px);
+    /* efeito vidro moderno */
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
