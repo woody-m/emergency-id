@@ -5,19 +5,15 @@
 }
 
 
-/* ✅ garante altura total do documento */
 html {
     min-height: 100%;
 }
 
-
-/* ✅ FUNDO PROFISSIONAL FIXO (mobile-safe) */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-
-    background-image: url("../assets/img/autism-bg.png");
+    background-image: url("../assets/img/autism-bg.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,8 +21,6 @@ body::before {
     z-index: -1;
 }
 
-
-/* ❌ removemos background do body */
 body {
     font-size: clamp(15px, 2.5vw, 18px);
     padding: 20px;
