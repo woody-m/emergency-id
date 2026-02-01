@@ -1,4 +1,4 @@
-const CACHE = "emergency-v3";
+const CACHE_NAME = "emergency-" + Date.now();
 
 const ASSETS = [
     "./",
@@ -6,19 +6,31 @@ const ASSETS = [
     "./css/styles.css",
     "./js/app.js",
     "./js/tts.js",
-    "./assets/img/autism-bg.png",
-    "./assets/img/child.jpg",
-    "./assets/docs/laudo.pdf",
+    "./manifest.json",
+    "./assets/img/autism-bg.webp",
+    "./assets/docs/laudo.pdf"
 ];
 
-self.addEventListener("install", e => {
-    e.waitUntil(
-        caches.open(CACHE).then(cache => cache.addAll(ASSETS))
+self.addEventListener("install", (event) => {
+    self.skipWaiting();
+
+    event.waitUntil(
+        caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
     );
 });
 
-self.addEventListener("fetch", e => {
-    e.respondWith(
-        caches.match(e.request).then(res => res || fetch(e.request))
+self.addEventListener("activate", (event) => {
+    event.waitUntil(
+        caches.keys().then((keys) =>
+            Promise.all(keys.map((key) => caches.delete(key)))
+        )
+    );
+
+    self.clients.claim();
+});
+
+self.addEventListener("fetch", (event) => {
+    event.respondWith(
+        caches.match(event.request).then((res) => res || fetch(event.request))
     );
 });
