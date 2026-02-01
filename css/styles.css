@@ -159,7 +159,8 @@ body {
 /* mobile ajuste leve de zoom do fundo */
 @media (max-width: 768px) {
     body::before {
-        background-size: 140%;
+        background-size: cover;
         background-position: center top;
+        transform: scale(1.15);
     }
 }
