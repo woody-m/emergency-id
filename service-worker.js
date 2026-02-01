@@ -7,7 +7,8 @@ const ASSETS = [
     "./js/app.js",
     "./js/tts.js",
     "./assets/img/autism-bg.png",
-    "./assets/img/child.jpg"
+    "./assets/img/child.jpg",
+    "./assets/docs/laudo.pdf",
 ];
 
 self.addEventListener("install", e => {
